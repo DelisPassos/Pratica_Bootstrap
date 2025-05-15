@@ -1,0 +1,21 @@
+/* Galeria com gap de 10px */
+.gallery {
+  gap: 10px;
+}
+
+/* Estilo das imagens da galeria */
+.gallery img {
+  flex: 1 1 150px; /* base: 150px, pode crescer ou encolher */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #d4af37;
+  box-shadow: 0 0 15px 4px rgba(212, 175, 55, 0.7);
+  cursor: pointer;
+}
