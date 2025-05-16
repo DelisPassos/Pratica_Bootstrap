@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #d4af37;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.button-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-button {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #d4af37;
+  padding: 12px 24px;
+  margin: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button i {
+  margin-right: 8px;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color: #d4af37;
+}
+
+.info-text {
+  max-width: 400px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.variante1 {
+  padding: 6px 12px;
+  margin: 5px;
+}
+
+.variante2 {
+  padding: 12px 24px;
+  margin: 15px;
+}
+
+.variante3 {
+  padding: 20px 40px;
+  margin: 25px;
+}
+
+.comparacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.botao-container {
+  background-color: #333; /* fundo escuro para contraste */
+  padding: 10px;
+  border: 1px dashed #888; /* mostra limite externo */
+}
+
+.botao-container .custom-button {
+  border: 2px dashed red; /* destaca limite do botão (padding) */
+  background-color: #d4af37;
+  color: #121212;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .custom-button {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .info-text {
+    width: 90%;
+  }
+
+  .comparacao {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
