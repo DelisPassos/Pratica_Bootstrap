@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fcfcfc;
+}
+
+.caixa-central {
+    width: 100px;
+    height: 100px;
+    background-color: #d4af37; /* dourado */
+    color: #121212;
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #080808;
+    transition: transform 0.3s ease;
+}
+
+.caixa-central:hover {
+    transform: scale(1.1);
+}
