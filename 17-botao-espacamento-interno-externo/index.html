@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaçamento Interno vs. Externo em um "Botão"</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espaçamento Interno vs. Externo em um "Botão"</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
-    
+
+  <h1 class="title">Espaçamento Interno vs. Externo</h1>
+
+  <div class="button-demo">
+    <a href="#" class="custom-button">
+      <i class="fas fa-star"></i> Clique Aqui
+    </a>
+
+    <p class="info-text">
+      Este botão usa <strong>padding</strong> para o espaço interno (entre o texto e a borda) e <strong>margin</strong> para separá-lo de outros elementos.
+    </p>
+
+    <h2 class="subtitle">Comparação de Espaçamentos em Botões</h2>
+
+    <div class="comparacao">
+        <div class="botao-container">
+            <a href="#" class="custom-button variante1">Pequeno</a>
+        </div>
+        <div class="botao-container">
+            <a href="#" class="custom-button variante2">Médio</a>
+        </div>
+        <div class="botao-container">
+            <a href="#" class="custom-button variante3">Grande</a>
+        </div>
+    </div>
+
+    <p class="info-text small-text">
+      Esses botões possuem diferentes valores de <strong>padding</strong> e <strong>margin</strong>. 
+      O botão “Pequeno” tem menos espaço interno e externo, enquanto o botão “Grande” tem espaçamentos amplos, dando mais "respiro" visual.
+    </p>
+  </div>
+
 </body>
 </html>
