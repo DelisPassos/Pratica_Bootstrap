@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilo dos blocos */
+.box {
+  background-color: #1a1a1a;
+  border: 2px solid #d4af37;
+  padding: 20px;
+  flex: 1 1 150px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #d4af37;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.box i {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+/* Ordem personalizada em telas grandes */
+.box-a { order: 3; }
+.box-b { order: 1; }
+.box-c { order: 2; }
+
+/* Em telas menores, volta à ordem A-B-C */
+@media (max-width: 600px) {
+  .box-a { order: 1; }
+  .box-b { order: 2; }
+  .box-c { order: 3; }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
