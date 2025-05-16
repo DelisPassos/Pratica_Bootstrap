@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Grid responsivo com auto-fit */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo dos cards */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #d4af37;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 1rem;
+  text-align: justify;
+}
