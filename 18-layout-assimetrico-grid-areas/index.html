@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Assimétrico com Grid Areas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Assimétrico com Grid Areas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
-    
+  <div class="grid-layout">
+    <header class="area header">
+      <i class="fas fa-star"></i> Cabeçalho
+    </header>
+    <aside class="area sidebar-left">
+      <i class="fas fa-bars"></i> Menu
+    </aside>
+    <main class="area main">
+      <h1>Conteúdo Principal</h1>
+      <p>Este é o corpo principal da página.</p>
+    </main>
+    <aside class="area sidebar-right">
+      <i class="fas fa-info-circle"></i> Lateral Direita
+    </aside>
+    <footer class="area footer">
+      <i class="fas fa-copyright"></i> Rodapé
+    </footer>
+  </div>
 </body>
 </html>
