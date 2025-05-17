@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Combinado: Painel de Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio Combinado: Painel de Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
-    
+  <h1><i class="fas fa-chart-line"></i> Painel de Dashboard</h1>
+
+  <div class="dashboard">
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-users"></i> Usuários Ativos
+      </div>
+      <div class="widget-content">
+        <span>1.234 usuários online</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Buscar" />
+          <button>Atualizar</button>
+          <button>Exportar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-shopping-cart"></i> Vendas Hoje
+      </div>
+      <div class="widget-content">
+        <span>254 pedidos</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Filtro" />
+          <button>Detalhes</button>
+          <button>Gráfico</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-comments"></i> Suporte
+      </div>
+      <div class="widget-content">
+        <span>38 conversas abertas</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Mensagem" />
+          <button>Responder</button>
+          <button>Arquivar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-dollar-sign"></i> Receita
+      </div>
+      <div class="widget-content">
+        <span>R$ 5.760,00</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Período" />
+          <button>Atualizar</button>
+          <button>Exportar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-clock"></i> Tempo Médio de Sessão
+      </div>
+      <div class="widget-content">
+        <span>3m 22s</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Filtro" />
+          <button>Detalhes</button>
+          <button>Relatório</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-envelope"></i> Novas Mensagens
+      </div>
+      <div class="widget-content">
+        <span>12 não lidas</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Remetente" />
+          <button>Ver</button>
+          <button>Excluir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-chart-pie"></i> Taxa de Conversão
+      </div>
+      <div class="widget-content">
+        <span>5.4%</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="Segmento" />
+          <button>Analisar</button>
+          <button>Comparar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">
+        <i class="fas fa-bug"></i> Erros no Sistema
+      </div>
+      <div class="widget-content">
+        <span>2 críticos</span>
+        <div class="responsive-row">
+          <input type="text" placeholder="ID do erro" />
+          <button>Ver Log</button>
+          <button>Resolver</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
